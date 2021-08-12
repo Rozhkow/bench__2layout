@@ -1,0 +1,22 @@
+{
+  "name": "bench__2layout",
+  "version": "1.0.0",
+  "description": "bench__2layout",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rozhkow/bench__2layout.git"
+  },
+  "author": "Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rozhkow/bench__2layout/issues"
+  },
+  "homepage": "https://github.com/Rozhkow/bench__2layout#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
