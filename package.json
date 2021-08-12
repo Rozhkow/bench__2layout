@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/Rozhkow/bench__2layout#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.0.0"
   }
 }

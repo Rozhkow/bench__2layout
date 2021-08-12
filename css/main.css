@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Georgia";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src: local("Georgia"), local("Georgia"),
     url("../fonts/Georgia.ttf") format("ttf"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/Georgia.ttf")
@@ -9,19 +9,9 @@
 }
 
 @font-face {
-  font-family: "Georgia";
-  font-style: normal;
-  font-weight: 700;
-  src: local("georgia bold"), local("GeorgiaBold"),
-    url("../fonts/GeorgiaBold.ttf") format("ttf"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/GeorgiaBold.ttf")
-      format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
   font-family: "arial";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src: local("arial"), local("arial"), url("../fonts/arial.ttf") format("ttf"),
     /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/arial.ttf")
       format("ttf"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
