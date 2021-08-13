@@ -1,0 +1,22 @@
+.content-title {
+    @include georgia-normal();
+    font-size: 35px;
+    line-height: 132%;
+    letter-spacing: 0.06em;
+    color: $color-title-dark;
+
+    @include respond-to(phones) {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        text-align: center;
+    }
+}
+
+.info .content-title {
+    margin-bottom: 25px;
+    max-width: 370px;
+    @include respond-to(phones) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
