@@ -1,0 +1,27 @@
+.header {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 60px;
+
+    @include respond-to(laptops) {
+        padding-top: 30px;
+        max-width: none;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @include respond-to(phones) {
+        padding-left: 10px;
+        padding-right: 53px;
+    }
+}

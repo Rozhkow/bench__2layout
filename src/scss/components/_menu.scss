@@ -1,0 +1,74 @@
+.header__item {
+    display: inline-block;
+    margin-right: 31px;
+
+    @include respond-to(phones) {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__list {
+    @include respond-to(phones) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: absolute;
+        width: 320px;
+        height: 798px;
+        right: 0;
+        top: 0;
+        background: #292929;
+        box-sizing: border-box;
+        padding-top: 248px;
+        opacity: 1;
+        transition-property: right, width, height, padding, opacity;
+        transition-duration: 300ms;
+
+        &.visually-hidden_menu {
+            right: -320px;
+            opacity: 0;
+            transition-property: right, width, height, padding, opacity;
+            transition-duration: 300ms;
+        }
+    }
+}
+
+.header__link {
+    text-decoration: none;
+    @include paragraph-1();
+    color: $text-on-dark-bg;
+    display: inline-block;
+    padding-bottom: 1px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition-duration: 400ms;
+
+    @include respond-to(phones) {
+        font-size: 32px;
+        line-height: 160%;
+    }
+
+    &:hover {
+        transition-duration: 400ms;
+        color: $bg-light;
+    }
+
+    &_active {
+        border-bottom: 3px solid $color-primary;
+        color: $bg-light;
+    }
+
+    &_disabled {
+        cursor: default;
+
+        &:hover {
+            color: $text-on-dark-bg;
+        }
+    }
+}
