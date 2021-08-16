@@ -1,0 +1,81 @@
+.pets__slider {
+    margin-bottom: 60px;
+    position: relative;
+
+    @include respond-to(phones) {
+        margin-bottom: 42px;
+    }
+}
+
+.slider__nav {
+    position: absolute;
+    top: 194px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond-to(phones) {
+        position: static;
+        margin-top: 20px;
+        justify-content: space-around;
+    }
+}
+
+.slider__arrow {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 400ms;
+
+    @include respond-to(phones) {
+        position: static;
+    }
+    &:hover {
+        transition-duration: 400ms;
+        transition-property: background-color, border-color;
+        background-color: $color-primary-hover;
+        border-color: $color-primary-hover;
+    }
+
+    &_left {
+        left: -105px;
+
+        @include respond-to(laptops) {
+            left: -64px;
+        }
+    }
+
+    &_right {
+        right: -105px;
+
+        @include respond-to(laptops) {
+            right: -64px;
+        }
+    }
+}
+
+.slider__list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: -90px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+
+    @include respond-to(laptops) {
+        margin-right: -40px;
+    }
+}
+
+.slider .button-link_transparent {
+    padding: 14px 43px;
+}

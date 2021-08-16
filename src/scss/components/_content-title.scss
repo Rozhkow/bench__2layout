@@ -20,3 +20,102 @@
         margin-right: auto;
     }
 }
+
+.pets .content-title {
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 56px;
+}
+
+.help .content-title {
+    max-width: 310px;
+    margin: 0 auto 59px;
+    text-align: center;
+    @include respond-to(phones) {
+        margin-bottom: 42px;
+        max-width: 225px;
+    }
+}
+
+.donation .content-title {
+    max-width: 300px;
+    margin-bottom: 20px;
+
+    @include respond-to(laptops) {
+        margin-bottom: 18px;
+    }
+
+    @include respond-to(phones) {
+        max-width: 220px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+}
+
+.donation__link {
+    @include georgia-normal();
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: $color-title-dark;
+    text-decoration: none;
+    background-color: #f1cdb3;
+    border-radius: 9px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    display: flex;
+    max-width: 350px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-duration: 400ms;
+
+    @include respond-to(phones) {
+        font-size: 15px;
+        line-height: 155%;
+        letter-spacing: 0.06em;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 281px;
+    }
+
+    &:hover {
+        transition-duration: 400ms;
+        transition-property: background-color;
+        background-color: $color-primary-hover;
+    }
+
+    &:before {
+        content: "";
+        width: 30px;
+        height: 23px;
+        display: inline-block;
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAXCAYAAAAcP/9qAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHMSURBVHgB7VbLccJADJWNYYZTNh04B4bPJaGCJBXgDgIVAB1ABZgKYipgUkFIBeQGnGIqiI/M8DFPsMzYCxgOtrnwZtZra1d6ktayrBFQKpVMTdM+MV583xeUEGDf2Ww23el06mpMquv6GIQDueBRAgCHgO0WOGrgqmrlcnmIGw9eNCgFgM/G9GzgYq3X6+pBCCceohQXi0XbdV3vjFEL+jVE5a1Wq0E2m60hShNLPwjM4T2QO4ZhfDMx4eZf6rKSGUWcz+c7mI6Ii8ViC1MP+iRttuAEyec6nBKTycTOZDKsK4ygMja+0wXA8/kpOc7w44JqE8M+PISIkXIBj4RCNKLrEFkNnP7gc4gY6RliMgMiF+OJrgDOso+oe1HrZ4mBfrCOVS+jMJvN7EKhMELGLNbj80Sp1mkfyEjNHJeTz4vYOKcUID9WfzrdCHfiO3FiCNWx2iRkPbZlPb4qul3Z6pqKfNcQztk6SUzHTcLF4M1vkIe+xdy/QcoG64qcJyfC1t6Rm31AZO98pJTAjYhnHen6zeVyl1pabMDPAb8TX3zGDZzLuFKpiOVy2ZeNOnZwpOh+HKC1++diIecdU0d9geIEHylnF7cN/svcAh9r3FQySTvNAAAAAElFTkSuQmCC");
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 15px;
+
+        @include respond-to(phones) {
+            margin-right: 14px;
+        }
+    }
+}
+
+.donation__desc {
+    font-family: $main-font;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #b2b2b2;
+
+    @include respond-to(phones) {
+        text-align: justify;
+    }
+}
+
+.contacts .content-title {
+    color: $color-light;
+    max-width: 280px;
+}
